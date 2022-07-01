@@ -17,7 +17,6 @@ const commonInteract = (role) => ({
 const stdlib = loadStdlib(process.env);
 console.log(`The consensus network is ${stdlib.connector}.`);
 const suStr = stdlib.standardUnit;
-const auStr = stdlib.atomicUnit;
 const toAU = (su) => stdlib.parseCurrency(su);
 const toSU = (au) => stdlib.formatCurrency(au, 4);
 const iBalance = toAU(1000);
